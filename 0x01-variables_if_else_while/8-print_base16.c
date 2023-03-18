@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
  *main-program entry point.
- *Return:0 success, non zero error.
+ *Description: 'Print numbers of base 16'
+ *Return: Always 0
  */
 int main(void)
 {
 int n;
 int m;
-
 for (n = 48; n <= 57; n++)
 {
 putchar(n);
