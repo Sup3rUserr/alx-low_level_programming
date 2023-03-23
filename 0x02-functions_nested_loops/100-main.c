@@ -9,10 +9,10 @@ int main(void)
 {
     print_times_tables(3);
     _putchar('\n');
-    print_times_tables(5);
+    print_times_table(5);
     _putchar('\n');
-    print_times_tables(98);
+    print_times_table(98);
     _putchar('\n');
-    print_times_tables(12);  
+    print_times_table(12);  
     return (0);
 }
