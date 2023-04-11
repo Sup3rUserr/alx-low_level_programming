@@ -2,24 +2,35 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - allocates memory
- * @b: argument
- * Return: void
+ * create_array - create array of size size and assign char c
+ * @size: size of array
+ * @c: char to assign
+ * Description: creat array of size size and assign char c
+ * Return: pointer to array, NULL if fail
+ *
  */
 
-void *malloc_checked(unsigned int b)
+char *create_array(unsigned int size, char c)
+
 {
 
-int *p;
+char *str;
+
+unsigned int i;
 
 
-	p = malloc(b);
 
-	if (!p)
-	{
+str = malloc(sizeof(char) * size);
 
-		exit(98);
-	}
+if (size == 0 || str == NULL)
 
-	return (p);
+return (NULL);
+
+
+for (i = 0; i < size; i++)
+
+str[i] = c;
+
+return (str);
+
 }
