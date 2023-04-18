@@ -65,6 +65,6 @@ free((*snoopie).name);
 free(snoopie);
 return (NULL);
 }
-(snoopie).owner = new_owner;
+(snoopie)->owner = new_owner;
 return (snoopie);
 }
